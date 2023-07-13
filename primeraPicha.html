@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roblox Facileado</title>
+    <style>
+    @font-face {
+      font-family: 'Lexend';
+      src: url("file:///D:/Programacion/HTML/Fonts/Lexend/Lexend-VariableFont_wght.ttf") format('truetype');
+    }
+
+    * {
+      font-family: 'Lexend', sans-serif;
+      box-sizing: border-box;
+    }
+    
+    body {
+      line-height: 1.5;
+      padding: 50px; /* Add padding to create space on all sides */
+      padding-left: 250px;
+      padding-right: 250px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    
+    code {
+      font-family: Consolas, monospace;
+      margin: 10px;
+    }
+
+    .indented-line {
+        display: inline-block;
+        margin-left: 40px;
+    }
+    </style>
+</head>
+<body>
+  <h1>COMO ROBLOX EN FACIL</h1>
+  <p>
+    Roblox utiliza un lenguaje variado de Lua 5.1 llamado Luau. Es un lenguaje interpretado, como Python o JavaScript.
+    En otras palabras, va de arriba para abajo. Es dinámico, entonces no hay que definir tipo de variable o función.
+    Principalmente utiliza eventos para comunicarse.
+  </p>
+  
+  <hr>
+  
+  <h2>Variables:</h2>
+  <p>
+    Las variables de Luau pueden tener cualquier tipo de valor. Puede ser int, float,
+    double, bool o cualquier otra cosa sin necesidad de especificar. Lo único que ocupa es
+    que definas si es local o global. Si no pones nada, asumirá que la variable es global.
+  </p>
+  <p>
+    <strong>Local</strong>: privada (solo ese script tiene acceso)<br>
+    <strong>Global</strong>: pública (todos tienen acceso y pueden referenciarla)
+  </p>
+  
+  <hr>
+  
+  <h2>Funciones:</h2>
+  <p>
+    Las funciones son como métodos (def de Python). No hay que definir el tipo de función, Luau es dinámico.
+    Se escriben de esta forma:
+  </p>
+  <pre><code> 
+local function Contar()
+{
+    print("1, 2, 3")
+}
+    </code>
+  </pre>
+  
+  <hr>
+  
+  <h2>For-Loop:</h2>
+  <p>Se escribe de esta forma:
+  <pre><code>
+for var = a, b, c do
+    print(var)
+end
+  </code></pre>
+  <p>var: tu variable, a: valor inicial, b: valor máximo, c:
+    cuánto añadir cada vez.</p>
+  
+  <hr>
+  
+  <h2>Referenciar Objetos:</h2>
+  <p>
+    Todos los objetos están bajo Workspace, y Workspace es una clase estática pública.
+    Por ejemplo, si quieres cambiar el color de la bola llamada Paloma dentro del folder Animales, puedes hacer:
+  </p>
+  <pre><code>
+Workspace.Animales.Paloma.color = Color3(r, g, b)
+</code></pre>
+  
+  <hr>
+  
+  <h2>Accesar Pariente:</h2>
+  <p>
+    Usualmente tu script va a estar dentro del objeto que lo utiliza. Por lo tanto, para referenciar el pariente, en vez
+    de usar Workspace puedes usar:
+  </p>
+  <pre><code>script.Parent</code></pre>
+  
+  <hr>
+  
+  <h2>Mini tips:</h2>
+  <ul>
+    <li>
+      Los materiales van entre comillas (" ")<br>
+      <code><span class="indented-line">script.Parent.Material = "Foil"</span></code>
+    </li>
+    <br>
+    <li>
+      Los comentarios se escriben con doble guion.<br>
+      <code><span class="indented-line">--No he comido en 12 horas Naruto</span></code>
+    </li>
+  </ul>
+</body>
+</html>
