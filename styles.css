@@ -1,12 +1,7 @@
-@font-face 
-{
-  font-family: 'Lexend';
-  src: url("file:///D:/Programacion/HTML/Fonts/Lexend/Lexend-VariableFont_wght.ttf") format('truetype');
-}
-
 *
 {
   font-family: 'Lexend', sans-serif;
+  font-weight: 300;
   box-sizing: border-box;
 }
 
