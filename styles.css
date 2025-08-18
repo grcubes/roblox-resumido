@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Lexend";
+    src: url("Lexend-Font/Lexend-VariableFont_wght.ttf");
+}
+
+*
+{
+    font-family: 'Lexend', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+body 
+{
+  line-height: 1.5;
+  padding: 50px; /* Add padding to create space on all sides */
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+h1 
+{
+  font-size: 36px;
+  font-weight: 800;
+}
+
+h2 
+{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+code 
+{
+  font-family: Consolas, monospace;
+  margin: 1rem;
+}
+
+.indented-line 
+{
+    display: inline-block;
+    margin-left: 3rem;
+}

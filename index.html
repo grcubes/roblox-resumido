@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Roblox Facileado</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>COMO ROBLOX EN FACIL</h1>
+        <p>
+            Roblox utiliza un lenguaje variado de Lua 5.1 llamado Luau. Es un lenguaje interpretado, como Python o JavaScript.
+            En otras palabras, va de  arriba para abajo. Es dinámico, entonces no hay que definir tipo de variable o función.
+            Principalmente utiliza eventos para comunicarse.
+        </p>
+        <br>
+        <p>
+            Advierto de una que el google docs que hice esta mas completo y ha sido actualizado varias veces, mientras que esta pagina no. 
+            Esta pagina es super cansada de editar y al menos por ahora prefiero la conveniencia de escribir todo rapido en google docs. 
+            Actualizare esto en el futuro, pero no sera hoy. Cuando sera? Cuando me de la gana.
+        </p>
+        
+        <hr>
+        
+        <h2>VARIABLES:</h2>
+        <p>
+            Las variables de Luau pueden tener cualquier tipo de valor. Puede ser int, float,
+            double, bool o cualquier otra cosa sin necesidad de especificar. Lo único que ocupa es
+            que definas si es local o global. Si no pones nada, asumirá que la variable es global.
+        </p>
+        <p>
+            <strong>Local</strong>: privada (solo esa funcion tiene acceso)<br>
+            <strong>Global</strong>: pública (todo el script tiene acceso y puede referenciarla)
+        </p>
+        <hr>
+        <h2>FUNCIONES:</h2>
+        <p>
+            Las funciones son como métodos (def de Python). No hay que definir el tipo de función, Luau es dinámico.
+            Se escriben de esta forma:
+        </p>
+        
+        <code> 
+        local function Contar()
+        {
+            print("1, 2, 3")
+        }
+        </code>
+
+        <hr>
+
+        <h2>FOR-LOOP:</h2>
+
+        <p>Se escribe de esta forma:
+
+        <code>
+        for var = a, b, c do
+            print(var)
+        end
+        </code>
+
+        <p>
+            var: tu variable, a: valor inicial, b: valor máximo, c: cuánto añadir cada vez.
+        </p>
+        
+        <hr>
+        
+        <h2>REFERENCIAR OBJETOS:</h2>
+
+        <p>
+            Todos los objetos están bajo Workspace, y Workspace es una clase estática pública.
+            Por ejemplo, si quieres cambiar el color de la bola llamada Paloma dentro del folder Animales, puedes hacer:
+        </p>
+
+        <code>
+        Workspace.Animales.Paloma.color = Color3(r, g, b)
+        </code>
+        
+        <hr>
+        
+        <h2>ACCESAR PARIENTE:</h2>
+
+        <p>
+            Usualmente tu script va a estar dentro del objeto que lo utiliza. Por lo tanto, para referenciar el pariente, en vez
+            de usar Workspace puedes usar:
+        </p>
+
+        <code>
+            script.Parent
+        </code>
+        
+        <hr>
+        
+        <h2>MINI TIPS:</h2>
+
+        <ul>
+            <li>
+                Los materiales van entre comillas (" ")<br>
+                <code>
+                    <span class="indented-line">script.Parent.Material = "Foil"</span>
+                </code>
+            </li>
+
+            <br>
+            
+            <li>
+                Los comentarios se escriben con doble guion.<br>
+                <code>
+                    <span class="indented-line">--No he comido en 12 horas Naruto</span>
+                </code>
+            </li>
+        </ul>
+    </body>
+</html>
