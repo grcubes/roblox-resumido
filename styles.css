@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 *
 {
   font-family: 'Lexend', sans-serif;
@@ -5,30 +7,34 @@
   box-sizing: border-box;
 }
 
-body {
+body 
+{
   line-height: 1.5;
   padding: 50px; /* Add padding to create space on all sides */
   padding-left: 250px;
   padding-right: 250px;
 }
 
-h1 {
+h1 
+{
   font-size: 36px;
   font-weight: bolder;
 }
 
-h2 {
+h2 
+{
   font-size: 16px;
   font-weight: bold;
 }
 
-code {
+code 
+{
   font-family: Consolas, monospace;
   margin: 10px;
 }
 
-.indented-line {
+.indented-line 
+{
     display: inline-block;
     margin-left: 40px;
-}
 }
