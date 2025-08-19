@@ -1,15 +1,24 @@
 :root
 {
   --bg-color: rgb(255, 255, 255);
+  --bg-shade-color: rgb(180, 180, 180);
   --text-color: rgb(0, 0, 0);
   --accent-text-color: rgb(0, 0, 255);
-}
+  
+  --button-bg-color: rgb(230, 230, 230);
+  --button-text-color: rgb(25, 25, 25);
+  --button-border-color: rgb(50, 50, 50);
 
 .dark-mode
 {
   --bg-color: rgb(30, 30, 30);
+  --bg-shade-color: rgb(20, 20, 20);
   --text-color: rgb(255, 255, 255);
   --accent-text-color: rgb(255, 215, 80);
+  
+  --button-bg-color: rgb(60, 60, 60);
+  --button-text-color: rgb(200, 200, 200);
+  --button-border-color: rgb(150, 150, 150);
 }
 
 
@@ -33,21 +42,19 @@ body
   color: var(--text-color);
 
   line-height: 1.5;
-  padding: 50px;
-  padding-left: 250px;
-  padding-right: 250px;
+  padding: 50px 250px;
 }
 
 h1 
 {
   font-size: 36px;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 h2 
 {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 code 
@@ -56,8 +63,44 @@ code
   margin: 1rem;
 }
 
+
+
 .indented-line 
 {
     display: inline-block;
     margin-left: 3rem;
+}
+
+.sticky 
+{
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  background-color: var(--bg-shade-color);
+}
+
+
+
+button
+{
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+
+  border-color: var(--button-border-color);
+
+  padding: 0.5rem 1rem;
+  margin: 1rem 1rem 1rem 0%;
+  border-radius: 1rem;
+  border-style: solid;
+
+  transition: all 0.15s ease-in-out;
+}
+
+button:hover
+{
+  padding: 0.6rem 1.1rem;
+  font-size: 1.1rem;
+
+  transition: all 0.15s ease-in-out;
 }
