@@ -1,3 +1,19 @@
+:root
+{
+  --bg-color: rgb(255, 255, 255);
+  --text-color: rgb(0, 0, 0);
+  --accent-text-color: rgb(0, 0, 255);
+}
+
+.dark-mode
+{
+  --bg-color: rgb(30, 30, 30);
+  --text-color: rgb(255, 255, 255);
+  --accent-text-color: rgb(255, 215, 80);
+}
+
+
+
 @font-face {
     font-family: "Lexend";
     src: url("Lexend-Font/Lexend-VariableFont_wght.ttf");
@@ -13,8 +29,11 @@
 
 body 
 {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
   line-height: 1.5;
-  padding: 50px; /* Add padding to create space on all sides */
+  padding: 50px;
   padding-left: 250px;
   padding-right: 250px;
 }
